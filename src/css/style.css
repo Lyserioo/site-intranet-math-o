@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+.sec1{
+    height: 100vh;
+    background: linear-gradient(0deg, #23B,#23A6D5, #23c);
+}
+
+.sec1 .container .navbar{
+    position: relative;
+    bottom: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.a1 a{
+    position: relative;
+    margin: 60px;
+}
+
+
+.container  .navbar a{
+    position: relative;
+    font-family: poppins;
+    font-size: 1em;
+    font-weight: 600;
+    bottom: 100%;
+    text-decoration: none;
+    color: white;
+}
+       
+.container .navbar a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width 500ms ease-in-out;
+}
+       
+.container .navbar a:hover:after {
+    width: 100%;
+}
+
+.container h1{
+    text-shadow:  0px 0px 10px #000;
+    font-size: 3em;
+    position: relative;
+    margin: 150px;
+    color: white;
+    font-weight: bold;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+}
+
+.container p{
+    font-size: 2em;
+    position: relative;
+    margin: 150px;
+    color: white;
+    font-weight: bold;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec1 .container button {
+    position: relative;
+    left: 45%;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    color: #23B;
+    font-size: 1em;
+     font-weight: bold;
+     font-family: poppins;
+     background-color: #ffffff;
+     box-shadow: 0px 0px 10px #23A6D5;
+    cursor: pointer;
+}
