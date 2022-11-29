@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+.sec1{
+    height: 100vh;
+    background: linear-gradient(0deg, #23B,#23A6D5, #23c);
+}
+.sec1 .container .navbar{
+    position: relative;
+    bottom: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.a1 a{
+    position: relative;
+    margin: 60px;
+}
+
+
+.container  .navbar a{
+    position: relative;
+    font-family: poppins;
+    font-size: 1em;
+    font-weight: 600;
+    bottom: 100%;
+    text-decoration: none;
+    color: white;
+}
+       
+.container .navbar a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width 500ms ease-in-out;
+}
+       
+.container .navbar a:hover:after {
+    width: 100%;
+}
+
+.container h1{
+    text-shadow:  0px 0px 10px #000;
+    font-size: 2em;
+    position: relative;
+    margin: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.ul ul { 
+    font-family: "poppins";
+    padding: 0; 
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+ .ul li { 
+    display: table-cell; 
+    position: relative; 
+  }
+
+.ul  a {
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    left: 57%;
+    margin-top: 10%;
+  }
+
+.ul a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+.ul a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+
